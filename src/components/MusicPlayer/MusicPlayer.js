@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
-import './Home.css';
+import './MusicPlayer.css';
 
 
 
 
 
-class Home extends Component {
+class MusicPlayer extends Component {
   constructor(props){
     super(props)
 
@@ -63,16 +63,11 @@ componentDidMount(){
     return (
       <div className="">
 
-          Hello
-
         <div id="mp3_player">
           <div id="audio_box"></div>
           <canvas id="analyser_render"></canvas>
         </div>
           
-        <ReactAudioPlayer src="./audio/whistle.ogg" controls/>
-
-        <canvas className='audioCanvas'>hello</canvas>
 
       </div>
     );

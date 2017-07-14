@@ -1,0 +1,12 @@
+.audioCanvas {
+    height: 100px;
+    width: 700px;
+
+    background-color: blue;
+}
+
+/*div#mp3_player { 
+    width:500px; height:160px; background:#000; padding:0px; margin:50px auto; 
+}*/
+div#mp3_player > div > audio{  width:500px; background:#000; float:left;  }
+div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:left; }
