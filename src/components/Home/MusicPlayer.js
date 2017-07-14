@@ -7,7 +7,7 @@ import './MusicPlayer.css';
 
 
 
-class MusicPlayer extends Component {
+export default class MusicPlayer extends Component {
   constructor(props){
     super(props)
 
@@ -73,6 +73,3 @@ componentDidMount(){
     );
   }
 }
-
-
-export default Home;
