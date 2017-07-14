@@ -24,7 +24,7 @@ export default class Artists extends Component {
       <div className="">
 
         <div>
-            <Link to='/artistprofile/clayton'>Cleighty_P</Link>
+            <Link to='/artistprofile/cleightyp'>Cleighty_P</Link>
             <Link to='/artistprofile/kourtneeg'>Kourtnee G</Link>
             <Link to='/artistprofile/ari'>Ari</Link>
             <Link to='/artistprofile/pinksway'>Pink Sway</Link>

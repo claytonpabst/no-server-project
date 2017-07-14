@@ -37,7 +37,7 @@ class Home extends Component {
               <div className='homeText'>  
                 you'll sound<br /> better &nbsp;<span>with us</span>
               </div>
-            {/*<MusicPlayer />*/}
+            <MusicPlayer />
             </div>
           </div>
         </section>

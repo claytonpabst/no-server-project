@@ -14,6 +14,7 @@ export default class MusicPlayer extends Component {
   }
 
 componentDidMount(){
+    console.log(this.props.audioSrc);
 
     var audio = new Audio();
     audio.src = './audio/whistle.ogg';
