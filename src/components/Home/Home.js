@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import ReactAudioPlayer from 'react-audio-player';
 import MusicPlayer from './../MusicPlayer/MusicPlayer'
+import {Link} from 'react-router-dom'
 
 import './Home.css';
 
@@ -20,21 +21,26 @@ class Home extends Component {
 
 
     return (
-      <div className="">
-        <body className='main'>
+        <section className='main'>
           <div className='stars'>
             <header className='header'>
-
+                <ul className='menuList'>
+                  <Link className='headerText' to='/musicplayer'>MUSIC PLAYER</Link>
+                  <Link className='headerText' to='/artists'>ARTISTS</Link>
+                  <Link className='headerText' to='/'>MUSIC PLAYER</Link>
+                  <Link className='headerText' to='/'>MUSIC PLAYER</Link>
+                  <Link className='headerText' to='/'>MUSIC PLAYER</Link>
+                  <Link className='headerText' to='/'>MENU</Link>
+                </ul> 
             </header>
             <div className='homeTextBox'>
-              <span className='homeText'>  
-                you'll sound<br /> better <b>with us</b>
-              </span>
+              <div className='homeText'>  
+                you'll sound<br /> better &nbsp;<span>with us</span>
+              </div>
             {/*<MusicPlayer />*/}
             </div>
           </div>
-        </body>
-      </div>
+        </section>
     );
   }
 }

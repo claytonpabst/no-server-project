@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:800|Yesteryear');
+
 .main {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(-20deg, #8b1cdb -150%, #111 65%);
+    position: relative;
     /*z-index: 1;*/
 }
 
 .homeText {
+    height: 200px;
+    width: 700px;
+    /*background: blue;*/
     color: white;
+    font-size: 130px;
+    font-weight: bolder;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: -7.7px;
+    line-height: 130px;
+    position: absolute;
+    top: 310px;
+    left: 170px;
+    /*-ms-transform: rotate(7deg); /* IE 9 */
+    /*-webkit-transform: rotate(90deg); */
+    /*transform: rotate(7deg);*/
 }
+
+.homeText span {
+    font-family: 'Yesteryear', cursive;
+    font-weight: lighter;
+    font-size: 140px;
+    letter-spacing: 0px;
+}
+
+.header {
+    height: 400px;
+    width: 400px;
+    background: #c5397a;
+    right: 220px;
+    position: absolute;
+    top: -345px;
+    transition: all .8s;
+    /*-webkit-transition: all 1s linear;*/
+}
+
+.header:hover {
+    top: 0px;
+    height: 600px;
+}
+
+.menuList {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+    /*bottom: 20px;*/
+    /*left: 20px;*/
+    /*border: 1px solid black;*/
+
+}
+
+.headerText {
+    font-family: 'Changa', sans-serif;
+    font-size: 30px;
+    height: 16.66%;
+    text-decoration: none;
+    color: white;
+    padding-top: 35px;
+    /*vertical-align: middle;*/
+    /*bottom: 20px;*/
+    /*left: 20px;*/
+    /*border: 1px solid blue;*/
+}
+
 
 /*div#mp3_player { 
     width:500px; height:160px; background:#000; padding:0px; margin:50px auto; 
