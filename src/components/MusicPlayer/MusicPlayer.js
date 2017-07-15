@@ -20,7 +20,7 @@ componentDidMount(){
     console.log(this.props.audioSrc);
 
     var audio = new Audio();
-    audio.src = 'http://localhost:3000/audio/whistle.ogg';
+    audio.src = this.props.audioSrc;
     audio.controls = true;
     audio.loop = true;
     audio.autoplay = false;

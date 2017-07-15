@@ -30,7 +30,7 @@ export default class Artists extends Component {
             <Link to='/artistprofile/ari'>Ari</Link>
             <Link to='/artistprofile/pinksway'>Pink Sway</Link>
         </div>
-          <MusicPlayer />
+          {/*<MusicPlayer />*/}
 
       </div>
     );

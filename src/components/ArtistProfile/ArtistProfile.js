@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
+// import ReactAudioPlayer from 'react-audio-player';
 import MusicPlayer from './../MusicPlayer/MusicPlayer'
 
 import './ArtistProfile.css';
@@ -19,23 +19,29 @@ export default class ArtistProfile extends Component {
                 name: 'cleighty_p',
                 img: '',
                 songs: [
-                    './audio/whistle.ogg'
+                    'http://localhost:3000/audio/whistle.ogg'
                 ]
             },
             {
                 name: 'Kourtnee G',
                 img: '',
-                songs: ''
+                songs: [
+                    'http://localhost:3000/audio/sorry.mp3'
+                ]
             },
             {
                 name: 'Pink Sway',
                 img: '',
-                songs: ''
+                songs: [
+                
+                ]
             },             
             {
                 name: 'Ari',
                 img: '',
-                songs: ''                
+                songs: [
+                    
+                ]               
             }
         ],
     }
@@ -49,24 +55,24 @@ export default class ArtistProfile extends Component {
 
   render() {
 
-    // let artist=this.state.artists[0];
-    // if (this.state.artistID === 'cleightyp') {
-    //     artist = this.state.artists[0];
-    // } else if (this.state.artistID === 'kourtneeg') {
-    //     artist = this.state.artists[1];
-    // } else if (this.state.artistID === 'ari') {
-    //     artist = this.state.artists[3];
-    // } else if (this.state.artistID === 'pinksway') {
-    //     artist = this.state.artists[2];
-    // }
+    let artist='';
+    if (this.state.artistID === 'cleightyp') {
+        artist = this.state.artists[0];
+    } else if (this.state.artistID === 'kourtneeg') {
+        artist = this.state.artists[1];
+    } else if (this.state.artistID === 'ari') {
+        artist = this.state.artists[3];
+    } else if (this.state.artistID === 'pinksway') {
+        artist = this.state.artists[2];
+    }
 
 
     return (
       <div className="">
 
-          <MusicPlayer  source='./audio/whistle.ogg'/>
+          <MusicPlayer audioSrc={artist.songs[0]}/>
      
-{/*audioSrc={artist.songs[0]}*/}
+
         
       </div>
     );
