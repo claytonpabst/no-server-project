@@ -5,12 +5,23 @@
     width: 100vw;
     background: linear-gradient(-20deg, #8b1cdb -150%, #111 65%);
     position: relative;
+    /*overflow: hidden;*/
     /*z-index: 1;*/
 }
 
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1.7px;
+    transform: rotate(-90deg) scaleY(1.5);
+    position: absolute;
+    top: 60px;
+}
+
 .homeText {
-    height: 200px;
-    width: 700px;
+    height: 400px;
+    width: 850px;
     /*background: blue;*/
     color: white;
     font-size: 130px;
@@ -20,7 +31,8 @@
     line-height: 130px;
     position: absolute;
     top: 310px;
-    left: 170px;
+    left: 140px;
+    transform: scaleY(1.4) scaleX(.9);
     /*-ms-transform: rotate(7deg); /* IE 9 */
     /*-webkit-transform: rotate(90deg); */
     /*transform: rotate(7deg);*/
@@ -29,7 +41,7 @@
 .homeText span {
     font-family: 'Yesteryear', cursive;
     font-weight: lighter;
-    font-size: 140px;
+    font-size: 180px;
     letter-spacing: 0px;
 }
 
@@ -56,11 +68,12 @@
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 5%;
-    /*bottom: 20px;*/
-    /*left: 20px;*/
-    /*border: 1px solid black;*/
+    top: 7.8%;
+    transition: all .8s;
+}
 
+.menuList:hover {
+    top: 4%;
 }
 
 .headerText {
@@ -69,22 +82,24 @@
     height: 16.66%;
     text-decoration: none;
     color: white;
-    padding-top: 35px;
-    /*vertical-align: middle;*/
-    /*bottom: 20px;*/
-    /*left: 20px;*/
-    /*border: 1px solid blue;*/
+    padding-top: 25px;
+    opacity: 1;
+    transition: all .4s;
 }
 
+.headerText:hover {
+    border: 5px solid purple;
+    opacity: .7;
+}
 
 /*div#mp3_player { 
     width:500px; height:160px; background:#000; padding:0px; margin:50px auto; 
-}*/
+}
 div#mp3_player > div > audio{  width:500px; background:#000; float:left;  }
-div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:left; }
+div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:left; }*/
 
 .stars{
-  position:absolute;
+  position: absolute;
   top:0;
   left:0;
   right:0;
@@ -94,8 +109,24 @@ div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:le
   display:block;
 }
 
-.stars {
+.stars{
   background: url(http://www.script-tutorials.com/demos/360/images/stars.png)center no-repeat;
+  background-size: cover;
+}
+
+.mountians{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:40%;
+  display:block;
+}
+
+.mountians{
+  background: url(http://localhost:3000/img/mountians.png) center no-repeat;
   background-size: cover;
 }
 
