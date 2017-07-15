@@ -11,12 +11,23 @@
 
 .logo {
     color: white;
-    font-size: 25px;
     font-weight: bold;
-    letter-spacing: -1.7px;
     transform: rotate(-90deg) scaleY(1.5);
     position: absolute;
     top: 60px;
+    /*text-decoration: none;*/
+    /*background: pink;*/
+    /*transform: scaleY(1.5);*/
+    /*height: 50px;*/
+}
+
+.logoInnerLink {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: -1.1px;
+    transform: scaleY(1.2);
 }
 
 .homeText {
@@ -53,6 +64,7 @@
     position: absolute;
     top: -345px;
     transition: all .8s;
+    z-index: 3;
     /*-webkit-transition: all 1s linear;*/
 }
 

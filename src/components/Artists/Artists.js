@@ -30,17 +30,27 @@ export default class Artists extends Component {
 
 
     return (
-      <div className="">
-        {/*<iframe src={ }></iframe>*/}
-
-        <div>
-            <Link to='/artistprofile/cleightyp'>Cleighty_P</Link>
-            <Link to='/artistprofile/kourtneeg'>Kourtnee G</Link>
-            <Link to='/artistprofile/ari'>Ari</Link>
-            <Link to='/artistprofile/pinksway'>Pink Sway</Link>
+      <div className="mainArtists">
+          <div className='logo'>
+            <Link className='logoInnerLink' to='/'>
+              Point Studio
+            </Link>
+          </div>
+        <div className='artistsParentParent'>
+          {/*<iframe src={ }></iframe>*/}
+          <div className='artistsParent'>
+            <div className='artistsHeader'>Point Studio <span>Artists</span></div>
+              <Link className='artistToClick' to='/artistprofile/cleightyp'>cleighty_p
+                <div className='artistProfilePic'>
+                  <img src='http://localhost:3000/img/pinksweyprofile.jpg'></img>
+                </div>
+              </Link>
+              <Link className='artistToClick' to='/artistprofile/kourtneeg'>Kourtnee G</Link>
+              <Link className='artistToClick' to='/artistprofile/ari'>Ari</Link>
+              <Link src='http://localhost:3000/img/pinksweyprofile.jpg' className='artistToClick' to='/artistprofile/pinksway'>Pink Swey</Link>
+          </div>
+            {/*<MusicPlayer />*/}
         </div>
-          {/*<MusicPlayer />*/}
-
       </div>
     );
   }

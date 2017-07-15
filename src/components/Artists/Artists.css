@@ -1,2 +1,66 @@
-/*div#mp3_player > div > audio{  width:500px; background:#000; float:left;  }
-div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:left; }*/
+@import url('https://fonts.googleapis.com/css?family=Changa:800|Yesteryear');
+
+.mainArtists {
+    height: fit-content;
+    width: 100vw;
+    background: linear-gradient(-20deg, #1c42db -150%, #111 65%);
+    position: relative;
+    justify-content: center;
+    /*overflow: hidden;*/
+    /*z-index: 1;*/
+}
+
+.artistsParentParent {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    /*color: white;*/
+}
+
+.artistsParent {
+    left: 15%;
+    width: 70%;
+    height: fit-content;
+    background: pink;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    /*margin: 50px;*/
+}
+
+.artistToClick {
+    width: 40%;
+    height: 400px;
+    background: blue;
+    color: white;
+    font-size: 40px;
+    font-family: 'Changa', sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.artistProfilePic {
+    height: 300px;
+    width: 300px;
+    background: red;
+}
+
+.artistsHeader {
+    font-family: 'Changa', sans-serif;
+    border-bottom: 5px solid white;
+
+}
+
+.artistsHeader span {
+    font-family: 'Yesteryear', cursive;
+
+}

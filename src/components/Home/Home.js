@@ -25,7 +25,9 @@ class Home extends Component {
           <div className='stars'>
             {/*<div className='mountians' >*/}
               <div className='logo'>
-                Point Studio
+                <Link className='logoInnerLink' to='/'>
+                  Point Studio
+                </Link>
               </div>
               <header className='header'>
                   <ul className='menuList'>
