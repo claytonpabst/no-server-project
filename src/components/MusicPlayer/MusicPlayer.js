@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
+
 import './MusicPlayer.css';
 
 
@@ -10,21 +11,24 @@ import './MusicPlayer.css';
 export default class MusicPlayer extends Component {
   constructor(props){
     super(props)
-
+      this.state = {
+        test: false
+      }
   }
 
 componentDidMount(){
     console.log(this.props.audioSrc);
 
     var audio = new Audio();
-    audio.src = './audio/whistle.ogg';
+    audio.src = 'http://localhost:3000/audio/whistle.ogg';
     audio.controls = true;
     audio.loop = true;
     audio.autoplay = false;
     // Establish all variables that your Analyser will use
     var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
     // Initialize the MP3 player after the page loads all of its HTML into the window
-    window.addEventListener("load", initMp3Player, false);
+    // window.addEventListener("load", initMp3Player, false);
+    console.log(audio)
 
   function initMp3Player(){
     document.getElementById('audio_box').appendChild(audio);
@@ -55,6 +59,10 @@ componentDidMount(){
       ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
     }
   }
+  initMp3Player()
+  this.setState({
+    test: true
+  })
 }
 
   render() {
@@ -62,15 +70,12 @@ componentDidMount(){
 
 
     return (
-      <div className="">
 
         <div id="mp3_player">
           <div id="audio_box"></div>
           <canvas id="analyser_render"></canvas>
         </div>
-          
 
-      </div>
     );
   }
 }

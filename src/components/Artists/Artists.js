@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import ReactAudioPlayer from 'react-audio-player';
 import {Link} from 'react-router-dom'
+import MusicPlayer from './../MusicPlayer/MusicPlayer'
 
 import './Artists.css';
 
@@ -29,7 +30,7 @@ export default class Artists extends Component {
             <Link to='/artistprofile/ari'>Ari</Link>
             <Link to='/artistprofile/pinksway'>Pink Sway</Link>
         </div>
-          
+          <MusicPlayer />
 
       </div>
     );
