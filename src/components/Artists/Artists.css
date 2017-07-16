@@ -23,7 +23,7 @@
     left: 15%;
     width: 70%;
     height: fit-content;
-    background: pink;
+    /*background: pink;*/
     color: white;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@
 .artistToClick {
     width: 40%;
     height: 400px;
-    background: blue;
+    /*background: blue;*/
     color: white;
     font-size: 40px;
     font-family: 'Changa', sans-serif;
@@ -46,12 +46,24 @@
     flex-direction: column;
     justify-content: space-between;
     justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .artistProfilePic {
-    height: 300px;
-    width: 300px;
-    background: red;
+    height: 350px;
+    width: 350px;
+    /*background: red;*/
+    overflow: hidden;
+    margin: 10px;
+}
+
+.theActualPic {
+    height: 350px;
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+    /*padding: 10px;*/
 }
 
 .artistsHeader {

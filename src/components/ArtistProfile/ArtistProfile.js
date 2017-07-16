@@ -30,7 +30,7 @@ export default class ArtistProfile extends Component {
                 ]
             },
             {
-                name: 'Pink Sway',
+                name: 'Pink Swey',
                 img: '',
                 songs: [
                 
@@ -62,7 +62,7 @@ export default class ArtistProfile extends Component {
         artist = this.state.artists[1];
     } else if (this.state.artistID === 'ari') {
         artist = this.state.artists[3];
-    } else if (this.state.artistID === 'pinksway') {
+    } else if (this.state.artistID === 'pinkswey') {
         artist = this.state.artists[2];
     }
 

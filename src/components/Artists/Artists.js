@@ -40,14 +40,26 @@ export default class Artists extends Component {
           {/*<iframe src={ }></iframe>*/}
           <div className='artistsParent'>
             <div className='artistsHeader'>Point Studio <span>Artists</span></div>
+              <Link className='artistToClick' to='/artistprofile/kourtneeg'>Kourtnee G
+                <div className='artistProfilePic'>
+                  <img className='theActualPic' src='http://localhost:3000/img/kourtbw.jpg'></img>
+                </div>              
+              </Link>
               <Link className='artistToClick' to='/artistprofile/cleightyp'>cleighty_p
                 <div className='artistProfilePic'>
-                  <img src='http://localhost:3000/img/pinksweyprofile.jpg'></img>
+                  <img className='theActualPic' src='http://localhost:3000/img/claysquare.jpg'></img>
                 </div>
               </Link>
-              <Link className='artistToClick' to='/artistprofile/kourtneeg'>Kourtnee G</Link>
-              <Link className='artistToClick' to='/artistprofile/ari'>Ari</Link>
-              <Link src='http://localhost:3000/img/pinksweyprofile.jpg' className='artistToClick' to='/artistprofile/pinksway'>Pink Swey</Link>
+              <Link className='artistToClick' to='/artistprofile/ari'>Ari
+                <div className='artistProfilePic'>
+                  <img className='theActualPic' src='https://i.ytimg.com/vi/58IRpuBU4Es/maxresdefault.jpg'></img>
+                </div>              
+              </Link>
+              <Link className='artistToClick' to='/artistprofile/pinkswey'>Pink Swey
+                <div className='artistProfilePic'>
+                  <img className='theActualPic' src='https://i1.sndcdn.com/avatars-000317452532-jk1m3o-t500x500.jpg'></img>
+                </div>
+              </Link>
           </div>
             {/*<MusicPlayer />*/}
         </div>
