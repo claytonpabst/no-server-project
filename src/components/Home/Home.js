@@ -23,7 +23,8 @@ class Home extends Component {
     return (
         <section className='main'>
           <div className='stars'>
-            {/*<div className='mountians' >*/}
+            <div className='mountians' >
+            </div>
               <div className='logo'>
                 <Link className='logoInnerLink' to='/'>
                   Point Studio
@@ -44,7 +45,6 @@ class Home extends Component {
                   you'll sound<br /> better &nbsp;<span>with us</span>
                 </div>
               </div>
-            {/*</div>*/}
           </div>
         </section>
     );
