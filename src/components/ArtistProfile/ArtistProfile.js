@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import ReactAudioPlayer from 'react-audio-player';
 import MusicPlayer from './../MusicPlayer/MusicPlayer'
+import axios from 'axios'
 
 import './ArtistProfile.css';
 
@@ -44,7 +45,11 @@ export default class ArtistProfile extends Component {
                 ]               
             }
         ],
+        userGifInput: '',
+        gifToDisplay: ''
     }
+
+    this.componentDidMount = this.componentDidMount.bind(this);
 
   }
 
@@ -52,6 +57,17 @@ export default class ArtistProfile extends Component {
 //       axios
 //       console.log(this.state.artistID)
 //   }
+
+  componentDidMount () {
+    var userGifInput = 'check this out'
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${ userGifInput }&api_key=d4ed0114c75c4e4e961030332aaf000a&limit=5`)
+    .then( (response) => {
+      console.log(response)
+      this.setState({
+          gifToDisplay: response.data.data[0].embed_url
+      })
+    })
+  }
 
   render() {
 
@@ -69,7 +85,7 @@ export default class ArtistProfile extends Component {
 
     return (
       <div className="">
-
+        <iframe src={ this.state.gifToDisplay }></iframe>
           <MusicPlayer audioSrc={artist.songs[0]}/>
      
 
