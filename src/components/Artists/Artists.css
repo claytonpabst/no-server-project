@@ -35,7 +35,7 @@
 }
 
 .artistToClick {
-    width: 40%;
+    width: 350px;
     height: 400px;
     /*background: blue;*/
     color: white;
@@ -76,4 +76,31 @@
 .artistsHeader span {
     font-family: 'Yesteryear', cursive;
 
+}
+
+.gif {
+    height: 500px;
+    width: 500px;
+}
+
+@media (min-width: 1100px) {
+    .artistToClick {
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainArtists {
+        padding-top: 130px;
+        min-width: 350px
+    }
+
+    /*.artistProfilePic {
+        height: 320px;
+        width: 320px;
+    }
+
+    .theActualPic {
+        height: 320px;
+    }*/
 }

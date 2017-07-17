@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import ReactAudioPlayer from 'react-audio-player';
 import MusicPlayer from './../MusicPlayer/MusicPlayer'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 import './ArtistProfile.css';
 
@@ -18,28 +19,28 @@ export default class ArtistProfile extends Component {
         artists: [
             {
                 name: 'cleighty_p',
-                img: '',
+                img: 'http://localhost:3000/img/claysquare.jpg',
                 songs: [
                     'http://localhost:3000/audio/whistle.ogg'
                 ]
             },
             {
                 name: 'Kourtnee G',
-                img: '',
+                img: 'http://localhost:3000/img/kourtbw.jpg',
                 songs: [
                     'http://localhost:3000/audio/sorry.mp3'
                 ]
             },
             {
                 name: 'Pink Swey',
-                img: '',
+                img: 'http://localhost:3000/img/pinkswey.jpg',
                 songs: [
                 
                 ]
             },             
             {
                 name: 'Ari',
-                img: '',
+                img: 'https://i.ytimg.com/vi/58IRpuBU4Es/maxresdefault.jpg',
                 songs: [
                     
                 ]               
@@ -59,6 +60,9 @@ export default class ArtistProfile extends Component {
 //   }
 
   componentDidMount () {
+
+    document.body.scrollTop=0;
+
     var userGifInput = 'check this out'
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${ userGifInput }&api_key=d4ed0114c75c4e4e961030332aaf000a&limit=5`)
     .then( (response) => {
@@ -84,9 +88,25 @@ export default class ArtistProfile extends Component {
 
 
     return (
-      <div className="">
-        <iframe src={ this.state.gifToDisplay }></iframe>
-          <MusicPlayer audioSrc={artist.songs[0]}/>
+      <div className="artistProfileMain">
+        <div className='artistPicBackground' style={ { background: 'url(' + artist.img + ') center no-repeat / cover', } }>
+                {/*position: 'absolute',
+    top:'0',
+    left:'0',
+    right:'0',
+    bottom:'0',
+    width:'100%',
+    height:'100%',
+    display:'block',
+    opacity: '.1'*/}
+        </div>
+        <div className='logo'>
+            <Link className='logoInnerLink' to='/'>
+                Point Studio
+            </Link>
+        </div>  
+        <iframe className='gif' src={ this.state.gifToDisplay }></iframe>
+        <MusicPlayer audioSrc={artist.songs[0]}/>
      
 
         

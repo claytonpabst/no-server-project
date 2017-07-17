@@ -6,7 +6,7 @@
     /*background: linear-gradient(-20deg, #8b1cdb -150%, #111 65%);*/
     background: linear-gradient(-20deg, #8b1cdb -100%, #111 65%);
     position: relative;
-    /*overflow: hidden;*/
+    overflow: hidden;
     /*z-index: 1;*/
 }
 
@@ -45,6 +45,7 @@
     top: 310px;
     left: 140px;
     transform: scaleY(1.4) scaleX(.9);
+    /*overflow: hidden;*/
     /*-ms-transform: rotate(7deg); /* IE 9 */
     /*-webkit-transform: rotate(90deg); */
     /*transform: rotate(7deg);*/
@@ -139,8 +140,9 @@ div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:le
 }
 
 .mountians{
-  /*background: url(http://localhost:3000/img/mountians.png) center no-repeat;*/
   background: url(http://www.marcywilliamspudalov.com/images/_1mtnlargeback.png) center no-repeat;
+  /*background: url(http://pngimg.com/uploads/mountain/mountain_PNG20.png) center no-repeat;*/
   background-size: cover;
+  /*opacity: 0.1;*/
 }
 

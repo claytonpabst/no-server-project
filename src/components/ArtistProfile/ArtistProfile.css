@@ -1,2 +1,24 @@
 div#mp3_player > div > audio{  width:500px; background:#000; float:left;  }
 div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:left; }
+
+.artistProfileMain {
+    height: fit-content;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-20deg, #ea0e27 -170%, #151515 70%);
+    position: relative;
+    justify-content: center;    
+}
+
+.artistPicBackground {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    opacity: .1;
+}
+
+
+
