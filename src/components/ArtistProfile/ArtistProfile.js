@@ -38,7 +38,7 @@ export default class ArtistProfile extends Component {
                 img: 'http://localhost:3000/img/pinkswey.jpg',
                 songName: 'Summers Love',
                 songs: [
-                    'https://localhost:3000/audio/summerslove.mp3'
+                    'http://localhost:3000/audio/summerslove.mp3'
                 ]
             },             
             {
@@ -110,11 +110,17 @@ export default class ArtistProfile extends Component {
                 Point Studio
             </Link>
         </div>  
-        {/*<iframe className='gif' src={ this.state.gifToDisplay }></iframe>*/}
+        <div className='backToArtists'>
+            <Link className='backToArtistsInnerLink' to='/artists'>
+                Back To Artists
+            </Link>
+        </div>  
         <div className='deadSpace'></div>
         <div className='artistNameOnProfile' >{artist.name}</div>
         <div className='playingSongTitle' >{artist.songName}</div>
         <MusicPlayer audioSrc={artist.songs[0]}/>
+        <div className='deadSpace'></div>
+        <iframe className='gif' src={ this.state.gifToDisplay }></iframe>
      
 
         

@@ -16,10 +16,6 @@
     transform: rotate(-90deg) scaleY(1.5);
     position: absolute;
     top: 60px;
-    /*text-decoration: none;*/
-    /*background: pink;*/
-    /*transform: scaleY(1.5);*/
-    /*height: 50px;*/
 }
 
 .logoInnerLink {
@@ -28,6 +24,24 @@
     text-decoration: none;
     font-family: 'Changa', sans-serif;
     letter-spacing: -1.1px;
+    transform: scaleY(1.2);
+}
+
+.backToArtists {
+    color: white;
+    font-weight: bold;
+    transform: rotate(-90deg) scaleY(1.5);
+    position: absolute;
+    top: 73px;
+    left: 40px;
+}
+
+.backToArtistsInnerLink {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: -.8px;
     transform: scaleY(1.2);
 }
 
