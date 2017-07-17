@@ -20,6 +20,7 @@ export default class ArtistProfile extends Component {
             {
                 name: 'cleighty_p',
                 img: 'http://localhost:3000/img/claysquare.jpg',
+                songName: 'Whistle',
                 songs: [
                     'http://localhost:3000/audio/whistle.ogg'
                 ]
@@ -27,6 +28,7 @@ export default class ArtistProfile extends Component {
             {
                 name: 'Kourtnee G',
                 img: 'http://localhost:3000/img/kourtbw.jpg',
+                songName: 'Sorry',
                 songs: [
                     'http://localhost:3000/audio/sorry.mp3'
                 ]
@@ -34,15 +36,18 @@ export default class ArtistProfile extends Component {
             {
                 name: 'Pink Swey',
                 img: 'http://localhost:3000/img/pinkswey.jpg',
+                songName: 'Summers Love',
                 songs: [
-                
+                    'https://localhost:3000/audio/summerslove.mp3'
                 ]
             },             
             {
                 name: 'Ari',
                 img: 'https://i.ytimg.com/vi/58IRpuBU4Es/maxresdefault.jpg',
+                songName: 'Night Time City',
                 songs: [
-                    
+                    'http://localhost:3000/audio/nighttimecity.mp3',
+                    'http://localhost:3000/audio/loveforyou.mp3'
                 ]               
             }
         ],
@@ -66,7 +71,7 @@ export default class ArtistProfile extends Component {
     var userGifInput = 'check this out'
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${ userGifInput }&api_key=d4ed0114c75c4e4e961030332aaf000a&limit=5`)
     .then( (response) => {
-      console.log(response)
+    //   console.log(response)
       this.setState({
           gifToDisplay: response.data.data[0].embed_url
       })
@@ -105,7 +110,10 @@ export default class ArtistProfile extends Component {
                 Point Studio
             </Link>
         </div>  
-        <iframe className='gif' src={ this.state.gifToDisplay }></iframe>
+        {/*<iframe className='gif' src={ this.state.gifToDisplay }></iframe>*/}
+        <div className='deadSpace'></div>
+        <div className='artistNameOnProfile' >{artist.name}</div>
+        <div className='playingSongTitle' >{artist.songName}</div>
         <MusicPlayer audioSrc={artist.songs[0]}/>
      
 

@@ -20,5 +20,24 @@ div#mp3_player > canvas{ width:500px; height:130px; background:#002D3C; float:le
     opacity: .1;
 }
 
+.deadSpace {
+    height: 300px;
+    width: 500px;
+}
 
+.playingSongTitle {
+    color: white;
+    font-size: 50px;
+    font-family: 'Yesteryear', cursive;
+}
+
+.artistNameOnProfile {
+    color: white;
+    font-size: 80px;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: -1.1px;
+    transform: scaleY(1.2); 
+    line-height: 140px;
+}
 
