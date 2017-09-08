@@ -42,7 +42,7 @@ class Home extends Component {
               </header>
               <div className='homeTextBox'>
                 <div className='homeText'>  
-                  you'll sound<br /> better &nbsp;<span>with us</span>
+                  you'll sound<br /> better &nbsp; &nbsp;<span>with us</span>
                 </div>
               </div>
           </div>

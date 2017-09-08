@@ -19,26 +19,26 @@ export default class ArtistProfile extends Component {
         artists: [
             {
                 name: 'cleighty_p',
-                img: 'http://localhost:3000/img/claysquare.jpg',
+                img: './img/claysquare.jpg',
                 songName: 'Whistle',
                 songs: [
-                    'http://localhost:3000/audio/whistle.ogg'
+                    '/audio/whistle.ogg'
                 ]
             },
             {
                 name: 'Kourtnee G',
-                img: 'http://localhost:3000/img/kourtbw.jpg',
+                img: './img/kourtbw.jpg',
                 songName: 'Sorry',
                 songs: [
-                    'http://localhost:3000/audio/sorry.mp3'
+                    '/audio/sorry.mp3'
                 ]
             },
             {
                 name: 'Pink Swey',
-                img: 'http://localhost:3000/img/pinkswey.jpg',
+                img: './pinkswey.jpg',
                 songName: 'Summers Love',
                 songs: [
-                    'http://localhost:3000/audio/summerslove.mp3'
+                    '/audio/summerslove.mp3'
                 ]
             },             
             {
@@ -46,7 +46,7 @@ export default class ArtistProfile extends Component {
                 img: 'https://i.ytimg.com/vi/58IRpuBU4Es/maxresdefault.jpg',
                 songName: 'Night Time City',
                 songs: [
-                    'http://localhost:3000/audio/nighttimecity.mp3',
+                    '/audio/nighttimecity.mp3',
                     'http://localhost:3000/audio/loveforyou.mp3'
                 ]               
             }
@@ -119,8 +119,8 @@ export default class ArtistProfile extends Component {
         <div className='artistNameOnProfile' >{artist.name}</div>
         <div className='playingSongTitle' >{artist.songName}</div>
         <MusicPlayer audioSrc={artist.songs[0]}/>
-        <div className='deadSpace'></div>
-        <iframe className='gif' src={ this.state.gifToDisplay }></iframe>
+        {/*<div className='deadSpace'></div>*/}
+        {/*<iframe className='gif' src={ this.state.gifToDisplay }></iframe>*/}
      
 
         

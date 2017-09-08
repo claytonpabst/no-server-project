@@ -17,16 +17,16 @@ app.use(session({
     }
 }))
 
-var conn = massive.connectSync({
-  connectionString: config.connectionString
-})
+// var conn = massive.connectSync({
+//   connectionString: config.connectionString
+// })
 
 
 app.use(express.static(__dirname + './../build'))
-app.set('db',conn);
-var db = app.get('db');
+// app.set('db',conn);
+// var db = app.get('db');
 
-var userController = require("./userController.js");
+// var userController = require("./userController.js");
 
 //////////Endpoints for the front end
 
